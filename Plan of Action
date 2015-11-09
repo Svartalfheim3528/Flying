@@ -1,0 +1,19 @@
+Specific Files to have:
+
+Flight control
+//This file will have the main interface, and uses all the other files we implement.
+
+Flight Schedule
+//This file has the flight schedule
+
+Plane Class
+//This holds the basic info for a plane.
+
+Passenger Class
+//Holds basic info for passengers
+
+Test Cases
+//These are the "input" for our program.
+
+Makefile
+//Needs makin'
