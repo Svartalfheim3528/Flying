@@ -1,0 +1,45 @@
+seat chart or plane class
+-array of seats* #point to the respective seat class (1, e+, e)
+
+1st class
+-multiplier
+-base price
+-days early
+*points to base seat to store other data
+
+Econ Plus Class
+-multiplier
+-base price
+-days early
+-Miles
+*points to base seat to store other data
+
+Econ Class
+-multiplier
+-base price
+-days early
+*points to base seat to store other data
+
+Base Seat
+-price
+-person* #points to the person sitting in the seat
+
+Person
+-related people* #Shows other people in the group
+-seat* #Points at the seat they are sitting in
+-ID #Creates a unique ID for the person sitting there
+-Itinerary* #Points to all of the different planes the person will be on for their trip
+
+"""
+Output should show something like as follows
+
+for each plane
+#Name or Flight Number (for each class #Rows #Columns) #Length of flight #Base price
+
+for each person
+#Name
+#ID
+#Days Early
+#Class
+#Related People's ID or Name
+(for each flight in the itenerary #Flight number)
