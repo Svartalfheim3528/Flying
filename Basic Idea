@@ -43,3 +43,9 @@ for each person
 #Class
 #Related People's ID or Name
 (for each flight in the itenerary #Flight number)
+
+Should a flight be canceled for some reason or another, vertex cover would help move the passenger from the cancelled
+flight to a new flight of semi optimal pattern with minimal layover.
+A simple equation for this could be ((Layover)*(Number of Flights))/(Flight Time)
+
+A method in the person class could move the person from one flight to the next.
