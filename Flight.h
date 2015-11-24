@@ -12,7 +12,7 @@ namespace Plane
 			int DepartTime, ArrivalTime;
 			fillSeats(int rows, int columns)
 		private:
-			bool **seats;
+			char **seats;
 	}
 }
 
