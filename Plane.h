@@ -10,7 +10,7 @@ namespace Plane
 		public:
 			string DepartCity, ArrivalCity;
 			int DepartTime, ArrivalTime;
-			fillSeats(int rows, int columns)  //In the future may need to add parameters for imported files
+			void fillSeats(int rows, int columns)  //In the future may need to add parameters for imported files
 		private:
 			Flight **seats;  //Array of type Flight because seat classes are all of type Flight
 			//We won't need to do anything special for this, each flight class(Economy, economy plus etc)
