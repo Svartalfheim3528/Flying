@@ -1,0 +1,18 @@
+//This is what I think the file format should maybe look like, can edit it in the future.
+
+FLIGHT#   ROWS  COLUMNS   DEPARTURECITY   ARRIVALCITY   DEPARTURETIME   ARRIVALTIME
+PASSID  PASSID  PASSID...
+
+//So the PASSID's are passenger ID's, and they
+//are going to tell you where to look for the passenger's
+//file, which is going to hold all of the passenger's details.
+
+//The passenger's files will just be an ID text file, i.e. "123456789.txt"
+//This will hold their itinerary, ID, Seat Class, etc.
+
+//Alternatively to the ROWS/COLUMNS, we could include an identifyer for
+//plane which tells us the rows/columns already, and that way we don't need
+//to figure out the info for every single plane, it'll all be pre-stored.
+
+//Edit after this if you have additions or changes you want to do
+-JW
