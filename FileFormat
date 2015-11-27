@@ -9,6 +9,9 @@ PASSID  PASSID  PASSID...
 
 //The passenger's files will just be an ID text file, i.e. "123456789.txt"
 //This will hold their itinerary, ID, Seat Class, etc.
+//PASSENGER FORMAT
+
+PASSID#   ITINERARY   SEATCLASS   PRICE   DAYSEARLY
 
 //Alternatively to the ROWS/COLUMNS, we could include an identifyer for
 //plane which tells us the rows/columns already, and that way we don't need
