@@ -1,12 +1,14 @@
-seat chart or plane class
+plane class
 ###This could be done with a 1D array or a series of 3 2D arrays or even a 2D array with some values being blocked from use
--array of seats* #point to the respective seat class (1, e+, e)
 -Departure City/Time + Arrival City/Time
 -flights it flys*points to flight class
+-ID
 
 Flight Class
 -plane* #points to seat chart/plane class
 -passenger* #points to the person class
+-seating chart
+-ID
 
 1st class
 -multiplier
@@ -32,19 +34,21 @@ Base Seat
 -person* #points to the person sitting in the seat
 
 Person
--related people* #Shows other people in the group
 -seat* #Points at the seat they are sitting in
 -ID #Creates a unique ID for the person sitting there
--Itinerary* #Points to all of the different flights the person will be on for their trip
+
+Itinerary Class
+-person* #points to the person
+-flights* #Points to all of the different flights the person will be on for their trip
 
 """
-Output should show something like as follows
+Output should show something like as follows, each section is in its own file for ease
 
 for each plane
-#Name #Length of flight #Base price (for each class)#Rows #Columns
+#ID #Name #Length of flight #Base price (for each class)#Rows #Columns
 
 for each flight
-#Flight number #passenger list #Departure times #Arrival Times #Departure City #Arrival City
+#ID #Flight number #passenger list #Departure times #Arrival Times #Departure City #Arrival City
 
 for each person
 #Name
@@ -54,20 +58,11 @@ for each person
 #Related People's ID or Name
 (for each flight in the itenerary #Flight number #Seat number)
 
+###################
+PROPOSED EXTENSIONS
+###################
 Should a flight be canceled for some reason or another, vertex cover would help move the passenger from the cancelled
 flight to a new flight of semi optimal pattern with minimal layover.
 A simple equation for this could be ((Layover)*(Number of Flights))/(Flight Time)
 
 A method in the person class could move the person from one flight to the next.
-
-
-###################
-Proposed Extensions
-###################
--How many seats remain
--Optional meal servive
--How many bags, and extra fees for more bags?
--Overweight fees
--In flight movie
--Priority check-in and boarding
--Noise canceling headphones
