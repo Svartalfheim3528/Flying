@@ -18,7 +18,7 @@ namespace Plane
 			void setArrivalTime(int Time);
 			
 		private:
-			Flight **seats;  //Array of type Flight because seat classes are all of type Flight
+			int **seats;  //Array of type Flight because seat classes are all of type Flight
 			//We won't need to do anything special for this, each flight class(Economy, economy plus etc)
 			//will be of type Flight, and therefore won't need to seperate them.
 	};
