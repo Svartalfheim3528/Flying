@@ -3,15 +3,35 @@
 
 namespace Plane
 {
-	Plane::Plane(string DeptC, string ArriveC, int DeptT, int ArrivalT){
-    DepartCity = DeptC;
-    ArrivalCity = ArriveC;
-    DepartTime = DeptT;
-    ArrivalTime = ArrivalT;
+Plane::Plane(){
+    DepartCity = "";
+    ArrivalCity = "";
+    DepartTime = 0;
+    ArrivalTime = 0;
     seats = Flight **seats;
     }
-  
-  Plane::fillSeats(int rows, int columns){
+ 
+Plane::fillSeats(int rows, int columns){
   //Need a format for the seats file so this can be fully implemented
   }
+  
+Plane::setSeat(int m, int n, Passenger P){
+	seats[m][n] = P;
+}
+
+Plane::setDepartCity(string City){
+	DepartCity = City;
+}
+
+Plane::setDepartTime(int Time){
+	DepartTime = Time;
+}
+
+Plane::setArrivalCity(string City){
+	ArrivalCity = City;
+}
+
+Plane::setArrivalTime(int Time){
+	ArrivalTime = Time;
+}
 }
